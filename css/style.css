@@ -1,4 +1,4 @@
-/* Estilos básicos del body */
+
 body {
     margin: 0;
     font-family: "Roboto", sans-serif;
@@ -9,7 +9,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Fondo de la página */
 body::before {
     content: "";
     position: fixed;
@@ -23,7 +22,6 @@ body::before {
     z-index: -1;
 }
 
-/* Cabecera */
 header {
     position: relative;
     display: flex;
@@ -34,17 +32,19 @@ header {
     padding: 1rem 2rem;
 }
 
-/* Contenedor principal */
+.nameFlag{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.9rem;
+}
 .contenedor {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0.5rem;
-    padding: 1rem;
 }
 
-/* Estilos para los párrafos */
 .contenedor p {
     font-family: "Roboto", serif;
     font-size: 1.8rem;
@@ -53,15 +53,13 @@ header {
     text-align: center;
 }
 
-/* Hora actual */
 #horaActual {
-    margin-top: -10px;
+    margin-top: -20px;
     font-size: 1.3rem;
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
 }
 
-/* Contenedor de aplicaciones */
 .appContainer {
     display: flex;
     flex-direction: row;
@@ -78,7 +76,6 @@ header {
     font-style: italic;
 }
 
-/* Detalles de temperatura */
 .sectionMain {
     display: flex;
     flex-direction: column;
@@ -110,7 +107,6 @@ header {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
-/* Detalles adicionales */
 #details {
     margin-top: -2rem;
     font-size: 1.5rem;
@@ -143,7 +139,6 @@ header {
     box-sizing: border-box;
 }
 
-/* Estilos para las cartas */
 .cartas {
     display: flex; 
     flex-direction: row; 
@@ -187,8 +182,7 @@ header {
     color: #0055c4; 
 }
 
-/* Media Queries para dispositivos móviles */
-
+/* Dispositivos móviles */
 @media (max-width: 768px) {
 
     .detalles ul {
@@ -212,7 +206,6 @@ header {
         width: 100%; 
         
     }
-
     .cartas li {
         width: 20%; 
     }
