@@ -40,7 +40,7 @@ const API_KEY = 'bbdc1078d9f6a17e689da2f3582ec07e';
 getLatitudeAndLongitud()
     .then(coords =>{
         const {latitude, longitude} = coords
-        const URL_CityName = `http://api.openweathermap.org/geo/1.0/reverse?lat=${latitude}&lon=${longitude}&limit=1&appid=${API_KEY}`;
+        const URL_CityName = `https://api.openweathermap.org/geo/1.0/reverse?lat=${latitude}&lon=${longitude}&limit=1&appid=${API_KEY}`;
         fetch(URL_CityName)
             .then(response => response.json())//La respuesta la formateamos a JSON
             .then(dataName => {
