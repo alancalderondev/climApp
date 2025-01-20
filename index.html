@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima App</title>
+    <!-- PARA LAS FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+   
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <div class="nameFlag">
+                <img src="" alt="Flag" id="flagCity"/>
+                <p id="tuCiudad" >Tu Ciudad</p>
+            </div>
+            <p id="horaActual"></p>
+        </div>
+        <div class="appContainer">
+            <img src="./assets/logo.png" alt="logoApp"/>
+            <p class="appName">ClimApp</p>
+        </div>
+    </header>
+
+    <section class="sectionMain">
+        <p class="temperaturaFinal" id="tempFinal"></p>
+        <div class="temps">
+            <p id="tempMin">Temperatura Minima: </p>
+            <p>|</p>
+            <p id="tempMax">Temperatura Maxima: </p>
+        </div>
+    </section>
+
+    
+    <section id="detallesAdicionales">
+        <p id="details">Detalles: </p>
+        <div class="detalles">
+            <ul class="listaCarts">
+                <li>
+                    <div class="cartas">
+                        <img src="./assets/nube.png" alt="icon"/>
+                        <p id="nube"></p>
+                    </div>
+                    <p>Nubes</p>
+                </li>
+                <li>
+                    <div class="cartas">
+                        <img src="./assets/gota.png" alt="icon"/>
+                        <p id="humeda">90</p>
+                    </div>
+                    <p>Humedad</p>
+                </li>
+                <li>
+                    <div class="cartas">
+                        <img src="./assets/uv.png" alt="icon"/>
+                        <p id="aire"></p>
+                    </div>
+                    <p>Viento</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
