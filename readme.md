@@ -2,7 +2,7 @@
 
 **Clima App** es una aplicación web que permite a los usuarios consultar el clima actual de su ciudad, utilizando datos proporcionados por la API de OpenWeatherMap.
 
-Puedes acceder a la aplicación en el siguiente enlace: [Clima App](https://alancalderondev.github.io/ClimApp/)
+Puedes acceder a la aplicación en el siguiente enlace: [Clima App](https://clima-appweb.netlify.app/)
 
 ## **Tecnologías utilizadas**
 
