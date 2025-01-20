@@ -76,5 +76,11 @@ getLatitudeAndLongitud()
                         const aire = document.querySelector('#aire');
                         aire.innerHTML = viento + ' m/s';
                     })
-            })
+            }).catch(error => {
+                console.log("Error al obtener datos de la API", error);
+                alert("No se pudo obtener la ciudad");
+            });
+    }).catch(error => {
+        console.log("Error al obtener la geolocalización", error);
+        alert("No se pudo obtener la ubicación. Asegúrate de permitir el acceso a la geolocalización.")
     });
